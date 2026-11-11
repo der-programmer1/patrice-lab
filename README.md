@@ -7,8 +7,8 @@ Persönliches Portfolio von Patrice: eigene Apps, Hacking und Security, ESP-Proj
 ## Was die Seite zeigt
 
 - Wechselnder Einstieg mit vier Perspektiven auf meine Interessen.
-- Echte Projektvorschauen und Links zu AppShelf, Bananenblick und GymDelay.
-- Filterbare Projekte und vertiefende Einblicke in die vier Themen.
+- Echte Projektvorschauen und Links zu AppShelf, Bananenblick und Satzfenster.
+- Filterbare Projekte, vertiefende Einblicke und Farbschema nach Systemvorgabe oder eigener Auswahl.
 - Persönliche Vorstellung und Verlinkung zum GitHub-Profil.
 - Ein kleines Portfolio-Terminal als Easter Egg. Es führt keinen Systemcode aus.
 
@@ -41,4 +41,4 @@ In **Settings → Pages → Build and deployment** die Quelle **GitHub Actions**
 
 Die Projektvorschauen stammen aus dem öffentlichen AppShelf-Katalog. Alle verlinkten Projekte gehören zum GitHub-Account `der-programmer1`. Die Fotos stammen von Unsplash und sind ausdrücklich Symbolbilder. Space Grotesk und IBM Plex Mono werden mit ihren OFL-Lizenzen mitgeliefert.
 
-Automatische Prüfungen decken lokale Assets, Unterpfade, Sprungziele, Bildbeschreibungen, zugängliche Dialognamen, Syntax und die Filter-/Terminal-Inhaltslogik ab. Sie ersetzen keinen visuellen Browser- oder Gerätetest. Im ursprünglichen Cloud-Executor fehlte das Tool `cua_repl.js`; deshalb wurden kein Browser-Layouttest und keine physische Smartphone-Prüfung behauptet.
+Automatische Prüfungen decken lokale Assets, Unterpfade, Sprungziele, Bildbeschreibungen, zugängliche Dialognamen, Syntax und die Filter-/Terminal-Inhaltslogik ab. Sie ersetzen keinen visuellen Browser- oder Gerätetest. Die Darstellung wird je Browser gespeichert und auf demselben Host mit AppShelf geteilt.
