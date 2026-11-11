@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#10120f">
+  <meta name="description" content="Ich bin Patrice. Ich programmiere Apps, tüftle an ESP-Projekten, entdecke Security und trainiere im Gym. Willkommen in meinem Lab.">
+  <meta property="og:title" content="Patrice — Code. Kraft. Neugier.">
+  <meta property="og:description" content="Projekte, Werkbank und der Mensch hinter dem Code. Das persönliche Portfolio von Patrice.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://der-programmer1.github.io/patrice-lab/">
+  <meta property="og:image" content="https://der-programmer1.github.io/patrice-lab/assets/social.svg">
+  <title>Patrice — Code. Kraft. Neugier.</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="preload" href="./assets/font-5.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="./assets/fonts.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" type="module"></script>
+</head>
+<body>
+  <a class="skip-link" href="#inhalt">Zum Inhalt</a>
+  <header class="site-header">
+    <a class="brand" href="#start" aria-label="Patrice Lab – Start">
+      <svg class="brand-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 5h12a8 8 0 0 1 0 16h-5v7H5zm7 7v3h5a1.5 1.5 0 0 0 0-3z" fill="currentColor"/><path d="M26 23h4v5h-4z" fill="#d0fc75"/></svg>
+      PATRICE<span class="brand-suffix">/ LAB</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Hauptnavigation">
+      <a href="#projekte">Meine Projekte <span>↗</span></a>
+      <a href="#interessen">Meine Welt</a>
+      <a href="#ueber-mich">Über mich</a>
+    </nav>
+    <a class="header-github" href="https://github.com/der-programmer1" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="inhalt">
+    <section class="hero section-shell" id="start" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> PERSÖNLICHES PORTFOLIO · PATRICE</p>
+        <h1 id="hero-title">CODE.<br>KRAFT.<br><span>NEUGIER.</span></h1>
+        <p class="hero-intro">Hi, ich bin Patrice.<br>Ich schreibe Code, löte Ideen zusammen und gebe im Gym Gas. <strong>Das hier ist meine Welt.</strong></p>
+        <div class="hero-actions">
+          <a class="button button-lime" href="#projekte">Entdecke, was ich baue <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#ueber-mich">Wer dahintersteckt <span aria-hidden="true">↓</span></a>
+        </div>
+        <p class="hero-note mono"><span aria-hidden="true">↳</span> Immer neugierig. Immer am Machen.</p>
+      </div>
+      <div class="hero-visual" data-mode="hardware">
+        <div class="visual-frame">
+          <img id="hero-image" class="hero-image" src="./assets/hardware.jpg" alt="Nahaufnahme einer Platine als Symbol für meine Begeisterung für Hardware" width="1400" height="933" fetchpriority="high">
+          <div class="visual-shade" aria-hidden="true"></div>
+          <div class="visual-top mono"><span><span class="tiny-dot" aria-hidden="true"></span> INSIDE MY WORLD</span><span id="hero-index">03 / 04</span></div>
+          <div class="visual-cross cross-one" aria-hidden="true">+</div><div class="visual-cross cross-two" aria-hidden="true">+</div>
+          <div class="visual-caption" aria-live="polite" aria-atomic="true">
+            <p class="mono" id="hero-kicker">AN DER WERKBANK</p>
+            <p id="hero-headline">KLEINE CHIPS.<br>GROSSE IDEEN.</p>
+            <span id="hero-tag" class="visual-tag mono">ESP-PROJEKTE / LÖTEN / TÜFTELN</span>
+          </div>
+          <span class="visual-coordinate mono" aria-hidden="true">P / 01 — BUILT FROM CURIOSITY</span>
+        </div>
+        <div class="mode-switcher" role="group" aria-label="Einblick in meine Interessen">
+          <button data-mode="code" aria-pressed="false"><span class="mode-symbol" aria-hidden="true">&lt;/&gt;</span><span>Code</span><span class="mode-number">01</span></button>
+          <button data-mode="security" aria-pressed="false"><span class="mode-symbol" aria-hidden="true">⌘</span><span>Security</span><span class="mode-number">02</span></button>
+          <button data-mode="hardware" aria-pressed="true"><span class="mode-symbol" aria-hidden="true">▧</span><span>Hardware</span><span class="mode-number">03</span></button>
+          <button data-mode="gym" aria-pressed="false"><span class="mode-symbol" aria-hidden="true">↔</span><span>Gym</span><span class="mode-number">04</span></button>
+        </div>
+        <p class="visual-hint mono"><span aria-hidden="true">↑</span> Vier Seiten von mir. Klick dich rein.</p>
+      </div>
+      <div class="hero-baseline mono"><span>VOM ERSTEN GEDANKEN BIS ZUM LETZTEN COMMIT.</span><a href="#projekte">WEITER ENTDECKEN <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <div class="ticker" aria-hidden="true"><div>THINK <span>↗</span> BUILD <span>✳</span> LIFT <span>↗</span> REPEAT <span>✳</span> THINK <span>↗</span> BUILD <span>✳</span> LIFT <span>↗</span> REPEAT <span>✳</span></div></div>
+
+    <section class="projects section-shell" id="projekte" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">01 / AUS IDEEN WIRD CODE</p><h2 id="projects-title">Nicht nur geredet.<br><span>Selbst gebaut.</span></h2></div>
+        <p class="section-aside">Meine Apps und Experimente.<br>Mit echtem Code, echten Fragen<br>und Platz für die nächste Version.</p>
+      </div>
+      <div class="project-toolbar">
+        <div class="project-filters" role="group" aria-label="Projekte filtern">
+          <button data-filter="all" aria-pressed="true">Alle <span>03</span></button>
+          <button data-filter="web" aria-pressed="false">Web & Apps</button>
+          <button data-filter="ai" aria-pressed="false">KI & Vision</button>
+          <button data-filter="gym" aria-pressed="false">Gym</button>
+        </div>
+        <p id="filter-status" class="mono" role="status">03 PROJEKTE</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card project-appshelf" data-categories="web">
+          <a class="project-art shelf-art" href="https://der-programmer1.github.io/AppShelf/" target="_blank" rel="noopener noreferrer" aria-label="AppShelf öffnen, öffnet in neuem Tab">
+            <div class="art-label mono"><span>MEIN APP-KATALOG</span><span>01 ↗</span></div>
+            <div class="shelf-title">AppShelf<span>↗</span></div>
+            <div class="shelf-stack" aria-hidden="true">
+              <div class="mini-app mini-one"><img src="./assets/bananenblick.png" alt="" width="1152" height="669" loading="lazy"><span>Bananenblick <b>↗</b></span></div>
+              <div class="mini-app mini-two"><img src="./assets/logic-cam.png" alt="" width="1440" height="1297" loading="lazy"><span>Logic-Cam <b>↗</b></span></div>
+              <div class="mini-app mini-three"><span class="mini-gym-symbol">G<span>↗</span></span><span>GymDelay <b>↗</b></span></div>
+            </div>
+            <span class="art-bottom mono">IDEEN HABEN EIN ZUHAUSE.</span>
+          </a>
+          <div class="project-info"><div class="project-meta mono"><span>WEB / APP-SAMMLUNG</span><span class="live-label"><i></i> ÖFFENTLICH</span></div><h3><a href="https://der-programmer1.github.io/AppShelf/" target="_blank" rel="noopener noreferrer">AppShelf <span aria-hidden="true">↗</span></a></h3><p>Der Ort für meine veröffentlichten Apps. Von kleinen Experimenten bis zu Projekten, die ich teilen möchte.</p><a class="project-source mono" href="https://github.com/der-programmer1/AppShelf" target="_blank" rel="noopener noreferrer">QUELLCODE ANSEHEN <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="project-card project-banana" data-categories="web ai">
+          <a class="project-art banana-art" href="https://der-programmer1.github.io/Bananenblick/" target="_blank" rel="noopener noreferrer" aria-label="Bananenblick-Prototyp öffnen, öffnet in neuem Tab">
+            <div class="art-label mono"><span>COMPUTER VISION</span><span>02 ↗</span></div>
+            <div class="banana-screenshot"><img src="./assets/bananenblick.png" alt="Echte Vorschau des öffentlichen Bananenblick-Prototyps mit einem markierten Bananen-Beispielbild" width="1152" height="669" loading="lazy"></div>
+            <span class="art-bottom mono">KAMERA AN. NEUGIER AUCH.</span>
+          </a>
+          <div class="project-info"><div class="project-meta mono"><span>KI / LOKALE BILDAUSWERTUNG</span><span class="prototype-label">PROTOTYP</span></div><h3><a href="https://der-programmer1.github.io/Bananenblick/" target="_blank" rel="noopener noreferrer">Bananenblick <span aria-hidden="true">↗</span></a></h3><p>Bananenreife im Kamerabild erkunden. Ein Experiment mit lokaler KI im Browser – und ehrlichem Blick auf ihre Grenzen.</p><a class="project-source mono" href="https://github.com/der-programmer1/Bananenblick" target="_blank" rel="noopener noreferrer">QUELLCODE ANSEHEN <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="project-card project-gym" data-categories="web gym">
+          <a class="project-art gym-art" href="https://der-programmer1.github.io/AppShelf/apps/gymdelay/" target="_blank" rel="noopener noreferrer" aria-label="GymDelay im AppShelf ansehen, öffnet in neuem Tab">
+            <div class="art-label mono"><span>CODE TRIFFT TRAINING</span><span>03 ↗</span></div>
+            <img class="gym-project-photo" src="./assets/gym.jpg" alt="" width="1400" height="933" loading="lazy">
+            <div class="gym-project-title">IM TAKT.<br><span>IM FOKUS.</span></div>
+            <div class="phone-preview"><div class="phone-speaker"></div><img src="./assets/gymdelay.png" alt="Echte Bildschirmaufnahme der GymDelay-Web-App" width="390" height="2141" loading="lazy"></div>
+            <span class="art-bottom mono">GYMDELAY / ANDROID + WEB</span>
+          </a>
+          <div class="project-info"><div class="project-meta mono"><span>GYM / MUSIK-COUNTDOWN</span><span class="live-label"><i></i> ÖFFENTLICH</span></div><h3><a href="https://der-programmer1.github.io/AppShelf/apps/gymdelay/" target="_blank" rel="noopener noreferrer">GymDelay <span aria-hidden="true">↗</span></a></h3><p>Ein eigenes Projekt zwischen Programmieren und Gym: Musik pausieren, vorbereiten und mit dem Countdown wieder einsteigen.</p><a class="project-source mono" href="https://github.com/der-programmer1/AppShelf/tree/main/apps" target="_blank" rel="noopener noreferrer">IM REPOSITORY ENTDECKEN <span aria-hidden="true">↗</span></a></div>
+        </article>
+      </div>
+      <div class="projects-footnote"><span class="mono">WORK IN PROGRESS IS STILL PROGRESS.</span><a href="https://github.com/der-programmer1" target="_blank" rel="noopener noreferrer">Mehr auf GitHub <span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section class="interests" id="interessen" aria-labelledby="interests-title">
+      <div class="section-shell">
+        <div class="section-heading"><div><p class="eyebrow">02 / MEHR ALS NUR EIN INTERESSE</p><h2 id="interests-title">Vier Welten.<br><span>Ein Antrieb.</span></h2></div><p class="section-aside">Verstehen, wie Dinge funktionieren.<br>Ausprobieren, was möglich ist.<br>Und dann selbst besser werden.</p></div>
+        <div class="interest-grid">
+          <article class="interest-card interest-code"><img src="./assets/code.jpg" alt="Laptop auf einem Schreibtisch, Symbolbild für Programmieren" width="1400" height="933" loading="lazy"><div class="interest-overlay"></div><div class="interest-content"><p class="mono interest-index">01 / &lt;/&gt;</p><h3>Code &<br>Programmieren</h3><p>Aus einer Idee eine App machen. Aus „das müsste doch gehen“ einen ersten Commit.</p><div class="interest-tags mono"><span>APPS</span><span>WEB</span><span>GITHUB</span></div><button class="interest-more" data-interest="code" aria-label="Mehr über mein Interesse am Programmieren">Mehr entdecken <span aria-hidden="true">↗</span></button></div></article>
+          <article class="interest-card interest-security"><img src="./assets/security.jpg" alt="Leuchtende Leiterbahnen als Symbol für Security und technische Neugier" width="1400" height="934" loading="lazy"><div class="interest-overlay"></div><div class="interest-content"><p class="mono interest-index">02 / [↗]</p><h3>Hacking &<br>Security</h3><p>Hinter die Oberfläche schauen. Systeme hinterfragen und Technik wirklich verstehen.</p><div class="interest-tags mono"><span>NEUGIER</span><span>SYSTEME</span><span>SECURITY</span></div><button class="interest-more" data-interest="security" aria-label="Mehr über mein Interesse an Hacking und Security">Mehr entdecken <span aria-hidden="true">↗</span></button></div></article>
+          <article class="interest-card interest-hardware"><img src="./assets/hardware.jpg" alt="Elektronische Platine als Symbol für ESP-Projekte und Löten" width="1400" height="933" loading="lazy"><div class="interest-overlay"></div><div class="interest-content"><p class="mono interest-index">03 / [⊞]</p><h3>ESP &<br>Lötkolben</h3><p>Wenn Code die digitale Welt verlässt. Kleine Boards, echte Verbindungen und eigene Ideen.</p><div class="interest-tags mono"><span>ESP</span><span>LÖTEN</span><span>TÜFTELN</span></div><button class="interest-more" data-interest="hardware" aria-label="Mehr über meine Hardware-Interessen">Mehr entdecken <span aria-hidden="true">↗</span></button></div></article>
+          <article class="interest-card interest-gym"><img src="./assets/gym.jpg" alt="Trainingsraum als Symbol für Gym und Bankdrücken" width="1400" height="933" loading="lazy"><div class="interest-overlay"></div><div class="interest-content"><p class="mono interest-index">04 / ↔</p><h3>Gym &<br>Bankdrücken</h3><p>Den Kopf frei bekommen. An mir arbeiten. Und dranbleiben, auch wenn es schwer wird.</p><div class="interest-tags mono"><span>BANKDRÜCKEN</span><span>GYM</span></div><button class="interest-more" data-interest="gym" aria-label="Mehr über mein Interesse am Gym">Mehr entdecken <span aria-hidden="true">↗</span></button></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section-shell" id="ueber-mich" aria-labelledby="about-title">
+      <div class="about-label"><p class="eyebrow">03 / DER MENSCH DAHINTER</p><div class="about-monogram" aria-hidden="true">P<span>↗</span></div><p class="mono">PATRICE<br>AUCH BEKANNT ALS<br><a href="https://github.com/der-programmer1" target="_blank" rel="noopener noreferrer">@DER-PROGRAMMER1 ↗</a></p></div>
+      <div class="about-copy"><h2 id="about-title">Ich mag Dinge,<br>bei denen ich denke:<br><span>„Wie geht das?“</span></h2><p>Und am liebsten finde ich es selbst heraus. Mit Code, einem ESP auf der Werkbank oder dem nächsten Versuch im Gym.</p><p>Meine Projekte sind mein Weg, Ideen auszuprobieren. Manche werden zu Apps, andere zu Erfahrungen. Was mich verbindet: die Lust, etwas zu verstehen, selbst zu bauen und weiterzumachen.</p><div class="about-principles"><div><span class="mono">01</span><p>Neugierig bleiben.</p></div><div><span class="mono">02</span><p>Selbst ausprobieren.</p></div><div><span class="mono">03</span><p>Fortschritt teilen.</p></div></div></div>
+    </section>
+
+    <section class="contact section-shell" aria-labelledby="contact-title"><p class="eyebrow">04 / DU BIST NEUGIERIG GEWORDEN?</p><div class="contact-row"><h2 id="contact-title">Schau rein.<br><span>Da geht noch was.</span></h2><a class="contact-arrow" href="https://github.com/der-programmer1" target="_blank" rel="noopener noreferrer" aria-label="Patrices GitHub-Profil öffnen">↗</a></div><div class="contact-bottom"><p>Mein Code, meine Projekte, meine nächsten Ideen.</p><a href="https://github.com/der-programmer1" target="_blank" rel="noopener noreferrer">Finde mich auf GitHub <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+
+  <footer class="site-footer section-shell"><a class="brand footer-brand" href="#start">PATRICE<span class="brand-suffix">/ LAB</span></a><p class="mono">MIT NEUGIER GEBAUT. © <span id="year">2026</span> PATRICE.</p><div><button class="footer-link" data-open-dialog="credits-dialog">Bildnachweise</button><button class="footer-link" data-open-dialog="privacy-dialog">Datenschutz</button><button class="footer-link terminal-trigger" id="terminal-trigger" aria-label="Portfolio-Terminal öffnen"><span aria-hidden="true">&gt;_</span> Terminal</button><a class="back-top" href="#start" aria-label="Zurück nach oben">↑</a></div></footer>
+
+  <dialog id="interest-dialog" class="detail-dialog" aria-labelledby="detail-title"><button class="dialog-close" data-close-dialog aria-label="Schließen">×</button><img id="detail-image" src="./assets/hardware.jpg" alt="" width="1400" height="933"><div class="detail-body"><p class="eyebrow" id="detail-kicker"></p><h2 id="detail-title"></h2><p id="detail-description"></p><div class="detail-tags mono" id="detail-tags"></div><a class="button button-lime" id="detail-link" href="#projekte">Meine Projekte ansehen <span aria-hidden="true">↗</span></a></div></dialog>
+
+  <dialog id="terminal-dialog" class="terminal-dialog" aria-labelledby="terminal-title"><div class="terminal-bar"><span class="terminal-lights" aria-hidden="true"><i></i><i></i><i></i></span><h2 id="terminal-title" class="mono">patrice@lab: ~</h2><button class="dialog-close" data-close-dialog aria-label="Terminal schließen">×</button></div><div class="terminal-body mono"><p class="terminal-welcome">Willkommen in meinem kleinen Stück Internet.</p><p class="terminal-muted">Tippe <strong>help</strong>, um mich und meine Projekte zu entdecken.</p><div id="terminal-output" role="log" aria-live="polite" aria-relevant="additions"></div><form id="terminal-form"><label for="terminal-input">patrice@lab:~$ <span class="sr-only">Terminal-Befehl</span></label><input id="terminal-input" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="160" placeholder="help" aria-label="Portfolio-Befehl"><button type="submit" aria-label="Befehl ausführen">↵</button></form><div class="terminal-shortcuts"><button data-command="about">about</button><button data-command="projects">projects</button><button data-command="hobbies">hobbies</button></div><p class="terminal-disclaimer">Ein Portfolio-Easter-Egg. Alle Befehle bleiben in deinem Browser.</p></div></dialog>
+
+  <dialog id="credits-dialog" class="text-dialog" aria-labelledby="credits-title"><button class="dialog-close" data-close-dialog aria-label="Schließen">×</button><p class="eyebrow">DIE BILDER DAHINTER</p><h2 id="credits-title">Bildnachweise</h2><p>Die Fotos sind Symbolbilder für meine Interessen. Sie zeigen nicht meine persönliche Werkbank oder mein Gym.</p><ul><li><a href="https://images.unsplash.com/photo-1518770660439-4636190af475" target="_blank" rel="noopener noreferrer">Hardware · Unsplash-Foto 1518770660439</a></li><li><a href="https://images.unsplash.com/photo-1517694712202-14dd9538aa97" target="_blank" rel="noopener noreferrer">Code · Unsplash-Foto 1517694712202</a></li><li><a href="https://images.unsplash.com/photo-1550751827-4bd374c3f58b" target="_blank" rel="noopener noreferrer">Security · Unsplash-Foto 1550751827</a></li><li><a href="https://images.unsplash.com/photo-1534438327276-14e5300c3a48" target="_blank" rel="noopener noreferrer">Gym · Unsplash-Foto 1534438327276</a></li></ul><p>Projektaufnahmen: aus dem öffentlichen AppShelf-Katalog. Bananenblick zeigt ein Beispielbild, keine Liveaufnahme. Bildherkunft des Bananen-Beispiels: Rohit et al. (2026), CC BY 4.0, siehe <a href="https://github.com/der-programmer1/Bananenblick" target="_blank" rel="noopener noreferrer">Bananenblick-Repository</a>.</p><p>Schriften: Space Grotesk und IBM Plex Mono, lokal eingebunden. <a href="./assets/SpaceGrotesk-OFL.txt">Space-Grotesk-Lizenz</a> · <a href="./assets/IBMPlexMono-OFL.txt">IBM-Plex-Mono-Lizenz</a></p></dialog>
+  <dialog id="privacy-dialog" class="text-dialog" aria-labelledby="privacy-title"><button class="dialog-close" data-close-dialog aria-label="Schließen">×</button><p class="eyebrow">KURZ UND VERSTÄNDLICH</p><h2 id="privacy-title">Datenschutz</h2><p>Dieses persönliche Portfolio lädt Schriften, Bilder und Skripte vom selben Host. Es setzt keine Analyse- oder Marketing-Cookies ein, nutzt keine Analysewerkzeuge und enthält kein Kontaktformular.</p><p>Interessen-Auswahl, Projektfilter und Terminal laufen lokal im Browser. Eingaben werden von der Seite weder gespeichert noch versendet.</p><p>Die Seite wird auf GitHub Pages gehostet. GitHub verarbeitet dabei technische Zugriffsdaten, unter anderem die IP-Adresse. Informationen dazu findest du in der <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener noreferrer">Datenschutzerklärung von GitHub</a>.</p><p>Externe Seiten werden erst aufgerufen, wenn du einen entsprechenden Link öffnest. Es gelten dann deren Datenschutzbestimmungen.</p></dialog>
+  <noscript><div class="noscript-note">Das Portfolio und alle Projektlinks funktionieren auch ohne JavaScript. Die Auswahl der Interessen, Filter und Zusatzfenster benötigen JavaScript. <a href="./credits.html">Bildnachweise & Datenschutz</a></div></noscript>
+</body>
+</html>
