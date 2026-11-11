@@ -16,7 +16,7 @@ test('public project filters show the intended work', () => {
   const shown = filter => PROJECTS.filter(project => matchesFilter(project.categories.join(' '), filter)).map(project=>project.name);
   assert.equal(shown('all').length, 3);
   assert.deepEqual(shown('ai'), ['Bananenblick · Prototyp']);
-  assert.deepEqual(shown('gym'), ['GymDelay']);
+  assert.deepEqual(shown('gym'), ['Satzfenster']);
   assert.equal(shown('web').length, 3);
   assert.deepEqual(shown('invalid'), []);
 });

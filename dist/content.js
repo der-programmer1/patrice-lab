@@ -9,13 +9,13 @@ export const INTERESTS = Object.freeze({
   code: {kicker:'01 / CODE & PROGRAMMIEREN', title:'Die Idee ist erst der Anfang.', description:'Mich reizt der Moment, in dem aus einer Idee etwas wird, das man wirklich öffnen und ausprobieren kann. Ich programmiere eigene Apps und Web-Projekte und teile sie über GitHub. AppShelf ist ihr gemeinsames Zuhause. Nicht jeder Versuch ist fertig. Aber jeder bringt mich weiter.', tags:['Apps bauen','Web-Projekte','GitHub'], href:'#projekte', link:'Meine Projekte entdecken'},
   security: {kicker:'02 / HACKING & SECURITY', title:'Was steckt unter der Oberfläche?', description:'Mich interessiert, wie Systeme zusammenspielen, wo Annahmen an ihre Grenzen kommen und warum etwas so funktioniert, wie es funktioniert. Hacking ist für mich technische Neugier: Fragen stellen, Zusammenhänge entdecken und in eigenen oder freigegebenen Umgebungen dazulernen.', tags:['Systeme verstehen','Security entdecken','Weiterlernen'], href:'https://github.com/der-programmer1', link:'Mein GitHub entdecken'},
   hardware: {kicker:'03 / ESP-PROJEKTE & LÖTEN', title:'Code zum Anfassen.', description:'An der Werkbank wird aus Software etwas Greifbares. Ich beschäftige mich mit ESP-Projekten, löte Verbindungen und probiere eigene Schaltungen aus. Mich begeistert das Zusammenspiel von kleinen Boards, Elektronik und selbst geschriebenem Code. Konkrete Projektberichte können hier mitwachsen.', tags:['ESP-Projekte','Löten','Elektronik'], href:'https://github.com/der-programmer1', link:'Meine Projekte auf GitHub'},
-  gym: {kicker:'04 / GYM & BANKDRÜCKEN', title:'Fortschritt kommt vom Dranbleiben.', description:'Im Gym bekomme ich den Kopf frei und arbeite an mir. Bankdrücken gehört dazu – genauso wie Training allgemein und die Freude, Stück für Stück besser zu werden. Manchmal treffen sich meine Interessen sogar: Mit GymDelay ist aus Programmieren und Training ein eigenes App-Projekt geworden.', tags:['Bankdrücken','Training','Ausgleich'], href:'https://der-programmer1.github.io/AppShelf/apps/gymdelay/', link:'GymDelay entdecken'}
+  gym: {kicker:'04 / GYM & BANKDRÜCKEN', title:'Fortschritt kommt vom Dranbleiben.', description:'Im Gym bekomme ich den Kopf frei und arbeite an mir. Bankdrücken gehört dazu – genauso wie Training allgemein und die Freude, Stück für Stück besser zu werden. Aus dieser Verbindung ist Satzfenster entstanden. Die Web-App hilft, wenn mitten im Training weniger Zeit bleibt als geplant.', tags:['Bankdrücken','Training','Ausgleich'], href:'https://der-programmer1.github.io/AppShelf/apps/satzfenster/demo/', link:'Satzfenster entdecken'}
 });
 
 export const PROJECTS = Object.freeze([
   {name:'AppShelf', url:'https://der-programmer1.github.io/AppShelf/', categories:['web']},
   {name:'Bananenblick · Prototyp', url:'https://der-programmer1.github.io/Bananenblick/', categories:['web','ai']},
-  {name:'GymDelay', url:'https://der-programmer1.github.io/AppShelf/apps/gymdelay/', categories:['web','gym']}
+  {name:'Satzfenster', url:'https://der-programmer1.github.io/AppShelf/apps/satzfenster/demo/', categories:['web','gym']}
 ]);
 
 export function matchesFilter(categories, filter) {

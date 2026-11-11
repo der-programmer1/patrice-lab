@@ -5,7 +5,7 @@
   "type": "module",
   "description": "Persönliches Portfolio von Patrice: Code, Security, ESP-Projekte und Gym.",
   "scripts": {
-    "check": "node --check dist/app.js && node --check dist/content.js && node scripts/check.mjs",
+    "check": "node --check dist/app.js && node --check dist/content.js && node --check dist/theme.js && node scripts/check.mjs",
     "test": "node --test tests/*.test.mjs"
   },
   "engines": { "node": ">=22" }
