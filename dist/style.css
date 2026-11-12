@@ -76,3 +76,5 @@ dialog{border:1px solid #4c5a3c;padding:0;background:var(--panel);color:var(--te
 @media(max-width:640px){.legal-page h1{font-size:34px}.legal-section p,.legal-section li{font-size:12px}.legal-page .brand-suffix{display:none}}
 
 @media(max-width:360px){h1{font-size:clamp(69px,21.5vw,75px)}}
+
+@media(max-width:380px){.site-header .brand-suffix{display:none}}
