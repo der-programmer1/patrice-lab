@@ -11,6 +11,7 @@ Persönliches Portfolio von Patrice: eigene Apps, Hacking und Security, ESP-Proj
 - Filterbare Projekte, vertiefende Einblicke und Farbschema nach Systemvorgabe oder eigener Auswahl.
 - Persönliche Vorstellung und Verlinkung zum GitHub-Profil.
 - Ein kleines Portfolio-Terminal als Easter Egg. Es führt keinen Systemcode aus.
+- Ein Website-Angebot für Privatpersonen: 350 € einmalig, mit genauer Leistungsbeschreibung, Ablauf, FAQ und direktem E-Mail-Kontakt auf [der Angebotsseite](https://der-programmer1.github.io/patrice-lab/angebot.html).
 
 Die Seite ist ein Portfolio. Bananenblick wird ausdrücklich als Prototyp gezeigt. Die dortige Modell- und Geräteabnahme wird nicht durch diese Website ersetzt. Die Fotos sind Symbolbilder; Hardware-Bauten, Trainingsbestleistungen oder Zertifikate werden nicht erfunden.
 
@@ -22,6 +23,7 @@ Statisches HTML, CSS und JavaScript ohne Framework, npm-Abhängigkeiten, externe
 - Layout und responsive Regeln: `dist/style.css`
 - Interessen-Inhalte und Portfolio-Befehle: `dist/content.js`
 - Interaktionen: `dist/app.js`
+- Website-Angebot und Anfragevorbereitung: `dist/angebot.html`, `dist/service.css`, `dist/service-request.js`
 - Bildquellen, Schriftlizenzen und Datenschutz: `dist/credits.html`
 
 Mit Node.js 24 prüfen:
@@ -41,4 +43,6 @@ In **Settings → Pages → Build and deployment** die Quelle **GitHub Actions**
 
 Die Projektvorschauen stammen aus dem öffentlichen AppShelf-Katalog. Alle verlinkten Projekte gehören zum GitHub-Account `der-programmer1`. Die Fotos stammen von Unsplash und sind ausdrücklich Symbolbilder. Space Grotesk und IBM Plex Mono werden mit ihren OFL-Lizenzen mitgeliefert.
 
-Automatische Prüfungen decken lokale Assets, Unterpfade, Sprungziele, Bildbeschreibungen, zugängliche Dialognamen, Syntax und die Filter-/Terminal-Inhaltslogik ab. Sie ersetzen keinen visuellen Browser- oder Gerätetest. Die Darstellung wird je Browser gespeichert und auf demselben Host mit AppShelf geteilt.
+Automatische Prüfungen decken lokale Assets, Unterpfade, Sprungziele, Bildbeschreibungen, zugängliche Dialognamen, Syntax, die Filter-/Terminal-Inhaltslogik sowie die Anfragevorbereitung ab. Der GitHub-Workflow prüft Portfolio und Angebot zusätzlich in Chromium und WebKit bei 320, 390, 768 und 1280 Pixeln und in beiden Farbschemata. Physische Gerätetests werden damit nicht behauptet. Die Darstellung wird je Browser gespeichert und auf demselben Host mit AppShelf geteilt.
+
+Die Anfragehilfe bereitet lokal einen Text und einen `mailto:`-Link vor. Besucher versenden ihre Anfrage selbst in ihrer E-Mail-App oder kopieren den Text. Ein direkter E-Mail-Link funktioniert auch ohne JavaScript. Es gibt keinen Formularserver und keine automatische Nachrichtenzustellung.

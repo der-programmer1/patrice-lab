@@ -31,10 +31,27 @@ jobs:
         with:
           path: dist
 
+  browser:
+    name: Angebot in Chromium und WebKit prüfen
+    needs: verify
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Browser-Testwerkzeug installieren
+        run: npm install --no-save --package-lock=false --ignore-scripts playwright@1.62.1
+      - name: Chromium und WebKit installieren
+        run: npx playwright install --with-deps chromium webkit
+      - name: Darstellung und Anfragevorbereitung prüfen
+        run: node tests/service-browser.mjs
+
   deploy:
     name: GitHub Pages veröffentlichen
     if: github.event_name != 'pull_request'
-    needs: verify
+    needs: [verify, browser]
     runs-on: ubuntu-latest
     permissions:
       pages: write
