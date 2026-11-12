@@ -21,7 +21,19 @@ const server = createServer(async (req,res) => {
 });
 await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
 const base = `http://127.0.0.1:${server.address().port}${mount}`;
-const noOverflow = async page => assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'horizontal overflow');
+const noOverflow = async page => {
+  const layout = await page.evaluate(() => ({
+    ok:document.documentElement.scrollWidth<=innerWidth+1,
+    width:innerWidth, documentWidth:document.documentElement.scrollWidth,
+    theme:document.documentElement.dataset.theme,
+    overflow:[...document.querySelectorAll('body *')].map(node=>({
+      tag:node.tagName, class:node.className, id:node.id,
+      right:Math.round(node.getBoundingClientRect().right),
+      width:Math.round(node.getBoundingClientRect().width)
+    })).filter(node=>node.right>innerWidth+1&&node.width>0).slice(0,12)
+  }));
+  assert.ok(layout.ok, `${page.url()}: ${JSON.stringify(layout)}`);
+};
 
 try {
   for (const [name, launcher] of Object.entries({chromium,webkit})) {
