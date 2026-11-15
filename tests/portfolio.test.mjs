@@ -34,7 +34,7 @@ test('terminal exposes only verified public projects and no automatic navigation
   assert.equal(result.links.length, 4);
   result.links.forEach(link => {
     assert.equal(new URL(link.url).protocol, 'https:');
-    assert.equal(new URL(link.url).hostname, 'der-programmer1.github.io');
+    assert.ok(['der-programmer1.github.io','factory-league.ich-der-programmer.chatgpt.site'].includes(new URL(link.url).hostname));
   });
 });
 test('unknown or hostile input stays plain text and cannot become a command', () => {

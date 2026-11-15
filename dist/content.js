@@ -16,7 +16,7 @@ export const PROJECTS = Object.freeze([
   {name:'AppShelf', url:'https://der-programmer1.github.io/AppShelf/', categories:['web']},
   {name:'Bananenblick · Prototyp', url:'https://der-programmer1.github.io/Bananenblick/', categories:['web','ai']},
   {name:'Satzfenster', url:'https://der-programmer1.github.io/AppShelf/apps/satzfenster/demo/', categories:['web','gym']},
-  {name:'Factory League · Vorschau', url:'https://der-programmer1.github.io/AppShelf/apps/factory-league/', categories:['web']}
+  {name:'Factory League', url:'https://factory-league.ich-der-programmer.chatgpt.site', categories:['web']}
 ]);
 
 export function matchesFilter(categories, filter) {
