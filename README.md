@@ -7,11 +7,13 @@ Persönliches Portfolio von Patrice: eigene Apps, Hacking und Security, ESP-Proj
 ## Was die Seite zeigt
 
 - Wechselnder Einstieg mit vier Perspektiven auf meine Interessen.
-- Echte Projektvorschauen und Links zu AppShelf, Bananenblick und Satzfenster.
+- Echte Projektvorschauen und Links zu AppShelf, Bananenblick, Satzfenster und Factory League.
 - Filterbare Projekte, vertiefende Einblicke und Farbschema nach Systemvorgabe oder eigener Auswahl.
 - Persönliche Vorstellung und Verlinkung zum GitHub-Profil.
 - Ein kleines Portfolio-Terminal als Easter Egg. Es führt keinen Systemcode aus.
 - Ein Website-Angebot für Privatpersonen: 350 € einmalig, mit genauer Leistungsbeschreibung, Ablauf, FAQ und direktem E-Mail-Kontakt auf [der Angebotsseite](https://der-programmer1.github.io/patrice-lab/angebot.html).
+
+Factory League ist öffentlich spielbar und mit direktem Spiel-Link, Quellcode und echter Aufnahme der gekennzeichneten Fabrik-Vorschau eingebunden. Der kostenlose Start verwendet Sites mit dauerhafter D1-Datenbank und Anmeldung über Spielername und Passwort.
 
 Die Seite ist ein Portfolio. Bananenblick wird ausdrücklich als Prototyp gezeigt. Die dortige Modell- und Geräteabnahme wird nicht durch diese Website ersetzt. Die Fotos sind Symbolbilder; Hardware-Bauten, Trainingsbestleistungen oder Zertifikate werden nicht erfunden.
 

@@ -14,10 +14,10 @@ test('every interest has a hero photo and a complete, matching detail entry', as
 });
 test('public project filters show the intended work', () => {
   const shown = filter => PROJECTS.filter(project => matchesFilter(project.categories.join(' '), filter)).map(project=>project.name);
-  assert.equal(shown('all').length, 3);
+  assert.equal(shown('all').length, 4);
   assert.deepEqual(shown('ai'), ['Bananenblick · Prototyp']);
   assert.deepEqual(shown('gym'), ['Satzfenster']);
-  assert.equal(shown('web').length, 3);
+  assert.equal(shown('web').length, 4);
   assert.deepEqual(shown('invalid'), []);
 });
 test('category matching uses whole categories, not substrings', () => {
@@ -31,10 +31,10 @@ test('terminal normalizes whitespace and case', () => {
 });
 test('terminal exposes only verified public projects and no automatic navigation', () => {
   const result = resolveCommand('projects');
-  assert.equal(result.links.length, 3);
+  assert.equal(result.links.length, 4);
   result.links.forEach(link => {
     assert.equal(new URL(link.url).protocol, 'https:');
-    assert.equal(new URL(link.url).hostname, 'der-programmer1.github.io');
+    assert.ok(['der-programmer1.github.io','factory-league.ich-der-programmer.chatgpt.site'].includes(new URL(link.url).hostname));
   });
 });
 test('unknown or hostile input stays plain text and cannot become a command', () => {
