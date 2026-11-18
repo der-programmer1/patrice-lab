@@ -7,13 +7,15 @@ Persönliches Portfolio von Patrice: eigene Apps, Hacking und Security, ESP-Proj
 ## Was die Seite zeigt
 
 - Wechselnder Einstieg mit vier Perspektiven auf meine Interessen.
-- Echte Projektvorschauen und Links zu AppShelf, Bananenblick, Satzfenster und Factory League.
+- Echte Projektvorschauen und Links zu AppShelf, Bananenblick, Rühl zur Bühne und Factory League.
 - Filterbare Projekte, vertiefende Einblicke und Farbschema nach Systemvorgabe oder eigener Auswahl.
 - Persönliche Vorstellung und Verlinkung zum GitHub-Profil.
 - Ein kleines Portfolio-Terminal als Easter Egg. Es führt keinen Systemcode aus.
 - Ein Website-Angebot für Privatpersonen: 350 € einmalig, mit genauer Leistungsbeschreibung, Ablauf, FAQ und direktem E-Mail-Kontakt auf [der Angebotsseite](https://der-programmer1.github.io/patrice-lab/angebot.html).
 
 Factory League ist öffentlich spielbar und mit direktem Spiel-Link, Quellcode und echter Aufnahme der gekennzeichneten Fabrik-Vorschau eingebunden. Der kostenlose Start verwendet Sites mit dauerhafter D1-Datenbank und Anmeldung über Spielername und Passwort.
+
+Rühl zur Bühne ist ein statisches Pixel-Jump’n’Run für PC und Handy. Der Gym-Projekteintrag, Interessen-Dialog und das Portfolio-Terminal verlinken das eigene öffentliche GitHub-Pages-Spiel. Die Projektvorschau zeigt eine echte Aufnahme aus dem Keller-Gym.
 
 Die Seite ist ein Portfolio. Bananenblick wird ausdrücklich als Prototyp gezeigt. Die dortige Modell- und Geräteabnahme wird nicht durch diese Website ersetzt. Die Fotos sind Symbolbilder; Hardware-Bauten, Trainingsbestleistungen oder Zertifikate werden nicht erfunden.
 
@@ -43,7 +45,7 @@ In **Settings → Pages → Build and deployment** die Quelle **GitHub Actions**
 
 ## Quellen und Prüfgrenzen
 
-Die Projektvorschauen stammen aus dem öffentlichen AppShelf-Katalog. Alle verlinkten Projekte gehören zum GitHub-Account `der-programmer1`. Die Fotos stammen von Unsplash und sind ausdrücklich Symbolbilder. Space Grotesk und IBM Plex Mono werden mit ihren OFL-Lizenzen mitgeliefert.
+Die Projektvorschauen stammen aus dem öffentlichen AppShelf-Katalog sowie den eigenen Spielen Rühl zur Bühne und Factory League. Alle verlinkten Projekte gehören zum GitHub-Account `der-programmer1`. Die Fotos stammen von Unsplash und sind ausdrücklich Symbolbilder. Space Grotesk und IBM Plex Mono werden mit ihren OFL-Lizenzen mitgeliefert.
 
 Automatische Prüfungen decken lokale Assets, Unterpfade, Sprungziele, Bildbeschreibungen, zugängliche Dialognamen, Syntax, die Filter-/Terminal-Inhaltslogik sowie die Anfragevorbereitung ab. Der GitHub-Workflow prüft Portfolio und Angebot zusätzlich in Chromium und WebKit bei 320, 390, 768 und 1280 Pixeln und in beiden Farbschemata. Physische Gerätetests werden damit nicht behauptet. Die Darstellung wird je Browser gespeichert und auf demselben Host mit AppShelf geteilt.
 

@@ -87,3 +87,13 @@ dialog{border:1px solid #4c5a3c;padding:0;background:var(--panel);color:var(--te
 .factory-art .art-label,.factory-art .art-bottom{color:#4a6049}
 @media(max-width:640px){.factory-art{aspect-ratio:1}.factory-project-title{font-size:26px;top:18%}.factory-preview{top:40%}}
 @media(prefers-reduced-motion:reduce){.factory-art:hover .factory-preview{transform:none}}
+
+/* Rühl zur Bühne: echte Pixel-Spielaufnahme statt der bisherigen App-Vorschau. */
+.ruhl-art{background:#1b292c;color:#d9e3cf;border-color:#8c7845}
+.ruhl-art:before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 90% 0,#6f755d33,transparent 75%)}
+.ruhl-project-title{position:absolute;left:8%;right:5%;top:19%;font-size:clamp(23px,2.4vw,34px);font-weight:600;line-height:1.12;letter-spacing:-1.1px;z-index:2}
+.ruhl-project-title span{color:#f1bd4e}
+.ruhl-preview{position:absolute;left:8%;top:43%;width:84%;height:auto;border:1px solid #927d4b;border-radius:4px;box-shadow:0 15px 30px #0005;transform:rotate(-3deg);transition:transform .35s;image-rendering:pixelated}
+.ruhl-art:hover .ruhl-preview{transform:rotate(0deg) translateY(-3px)}
+@media(max-width:600px){.ruhl-project-title{font-size:29px;top:20%}.ruhl-preview{top:44%;left:10%;width:80%}.project-ruhl .art-bottom{font-size:6px}}
+@media(prefers-reduced-motion:reduce){.ruhl-art:hover .ruhl-preview{transform:none}}

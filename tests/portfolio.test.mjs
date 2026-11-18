@@ -16,7 +16,8 @@ test('public project filters show the intended work', () => {
   const shown = filter => PROJECTS.filter(project => matchesFilter(project.categories.join(' '), filter)).map(project=>project.name);
   assert.equal(shown('all').length, 4);
   assert.deepEqual(shown('ai'), ['Bananenblick · Prototyp']);
-  assert.deepEqual(shown('gym'), ['Satzfenster']);
+  assert.deepEqual(shown('gym'), ['Rühl zur Bühne']);
+  assert.equal(INTERESTS.gym.href, PROJECTS.find(project => project.categories.includes('gym')).url);
   assert.equal(shown('web').length, 4);
   assert.deepEqual(shown('invalid'), []);
 });
@@ -54,4 +55,6 @@ test('all project cards have real navigation and the public banana release is a 
   const html = await readFile(new URL('../dist/index.html', import.meta.url), 'utf8');
   PROJECTS.forEach(project=>assert.ok(html.includes(`href="${project.url}"`)));
   assert.match(html, /prototype-label">PROTOTYP/);
+  assert.doesNotMatch(html, /\bsatzfenster\b/i);
+  assert.equal((html.match(/<article class="project-card /g) || []).length, 4);
 });
